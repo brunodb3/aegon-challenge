@@ -1,0 +1,10 @@
+<h1 style="font-size: 30px; color: red;">Cat Facts!</h1>
+
+<ul *ngFor="let fact of facts.data">
+  <li>
+    {{ fact.fact }}
+  </li>
+</ul>
+
+<input id="search" type="text" placeholder="Search" style="height: 20px; width: 400px;" />
+<button (click)="search()">Search</button>
